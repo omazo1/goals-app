@@ -1,25 +1,15 @@
 import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+  //JSX Code
+  return <h1 title='Welcome Message'> Hello friends, This is my first react application.</h1>
+
+  //convert JSX code to React code
+  return React.createElement('h1', {title:'Welcome Message'}, 'Hello Freinds, Welcome to COMP229')
+};
+
+
 
 export default App;
