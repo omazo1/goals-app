@@ -1,15 +1,15 @@
 import React from "react";
 import "./GoalList.css";
 
-const GoalList = () => {
+const GoalList = (props) => {
+  
   return (
     <ul className="goal-list">
-      <li>Create React Application</li>
-      <li>Learn full stack tools and technologies</li>
-      <li>Complete assignments, quizzes and Tests</li>
+      {props.goals.map((goal) => {
+        return <li>{goal.text}</li>;
+      })}
     </ul>
   );
-  
 };
 
 export default GoalList;
